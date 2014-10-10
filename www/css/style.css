@@ -1,0 +1,50 @@
+/* Empty. Add your own CSS if you like */
+#bar-click {
+  position: absolute;
+  height: 18px;
+  top: 4px;
+  left: 0;
+  right: 0;
+  margin-top: -9px;
+}
+#bar-outer,
+#bar-inner {
+  background: #3e3e40;
+  border-radius: 3px;
+  bottom: 8px;
+  left: 0;
+  height: 4px;
+  right: 0;
+  position: absolute;
+}
+#bar-click:hover #bar-outer {
+  bottom: 7px;
+  height: 6px;
+}
+#bar-click:hover #bar-inner {
+  height: 6px;
+}
+#bar-inner {
+  background: #4a87ee;
+  bottom: 0;
+  right: auto;
+}
+#position {
+  background: #fff;
+  border-radius: 6px;
+  border: 3px solid #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+  display: block;
+  height: 12px;
+  position: absolute;
+  top: -3px;
+  width: 12px;
+  opacity: 0;
+}
+#bar-click:hover #position {
+  opacity: 1;
+}
+#position.dragging {
+  background-color: #ffffff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4), inset 2px 2px 3px rgba(0, 0, 0, 0.45);
+}

@@ -1,0 +1,48 @@
+<ion-view title="Cathderal">
+  <ion-content class="has-header">
+    <!-- overall-->
+	<div class="list card">
+
+	  <div class="item item-avatar">
+	    <img src="img/1.jpg">
+	    <h2>Helsinki Cathedral</h2>
+      	<p>Unionsgatan 29, 00170 Helsingfors</p>
+	  </div>
+
+	  <div class="item item-image">
+	    <img src="img/1.jpg">
+	  </div>
+
+		<div id="player">
+
+	        <button onClick="playAudio('/android_asset/www/test.mp3');" ng-click="playing = !playing" class="button"><i class="icon ion-play" ng-hide="playing == true"></i> <i class="icon ion-pause" ng-show="playing == true"></i></button>
+<!--            <button ng-click="play('/android_asset/www/test.mp3');"><i class="icon ion-play"></i></button>-->
+	        <button onClick="stopAudio('/android_asset/www/test.mp3');" ng-click="playing = false" ng-show="playing == true" class="button"><i class="icon ion-stop"></i></button>
+            <p ng-hide="true"><span id="audio_position"></span></p>
+            <div id="bar-outer" style="width:100%;">
+              <div id="bar-inner">
+              </div>
+            </div>
+            <br/><input type="range" name="volume">
+		</div>
+	</div>
+
+<!-- detail-->
+	<div class="list card">
+		<div class="item item-avatar">
+	    	<h2>Inside</h2>
+	 	</div>
+	  
+
+		<div class="item item-image">
+		   	<img src="img/1.1.jpg">
+		</div>
+
+		<a class="item item-icon-left assertive" href="#">
+		  <i class="icon ion-music-note"></i>
+		    Start listening
+		</a>
+
+	</div>
+  </ion-content>
+</ion-view>
